@@ -8,11 +8,23 @@ import javax.swing.JFrame;
 
 public class Screen extends JFrame
 {
+	//Declaração da classe que le o mapa
 	MapaTmx mapa;
 	
 	public Screen(String titulo) 
 	{
 		super(titulo);
+		/*
+		 * instaciamos a classe passando o local do mapa
+		 * Pode se usar o caminho absoluto do mapa se preferir
+		 * 
+		 * OBS: DICA MIPORTANTE
+		 * dentro do arquivo TMX fica a localição da imagen que utilizou para gerar os tiles
+		 * recomendo que troque o caminho para o relativo do projeto que está executando
+		 * ou caminho absoluto da imagen no seu pc para 
+		 * não haver erros de leitura, veja  imagen no Blog para ter uma ideia e baixe 
+		 * os arquivos do github.
+		 */
 		mapa = new MapaTmx("./res/mapas/ola_mapa.tmx");
 	}
 
